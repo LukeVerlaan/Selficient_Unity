@@ -14,9 +14,9 @@ namespace Business {
         private UnityAction<System.Object> saveHardwareState;
 		private UnityAction<System.Object> loadHardwareDataset;
 
-		[SerializeField] private string uri = "http://172.20.10.13:6002/service/getallhardware?apikey=kdfjadslj2xk";
-		[SerializeField] string stateUri = "http://172.20.10.13:6002/serivice/updatestate?apikey=kdfjadslj2xk";
-		[SerializeField] string datasetUri = "http://172.20.10.13:6002/newdashboard/api/graph";
+		[SerializeField] private string uri = "https://server.ecliptic.nl/hu/nosi/service/getallhardware?apikey=kdfjadslj2xk";
+		[SerializeField] string stateUri = "https://server.ecliptic.nl/hu/nosi/serivice/updatestate?apikey=kdfjadslj2xk";
+		[SerializeField] string datasetUri = "https://server.ecliptic.nl/hu/nosi/newdashboard/api/graph";
 		[SerializeField] private string areaId; // TODO: De NoSi zo aanpassen dat er per area in geladen kan worden.
 		private IDataService serviceImplementation;
 		// Use this for initialization
